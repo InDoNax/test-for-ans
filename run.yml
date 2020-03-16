@@ -1,0 +1,11 @@
+---
+  - name: "Test for Listener"
+    hosts: localhost
+    connection: local 
+    tasks:
+
+    - name: "add line in file"
+      lineinfile:
+        path: /home/blue/avi/file
+        line: done
+        create: yes
